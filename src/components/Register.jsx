@@ -3,6 +3,8 @@ import axios from "axios";
 import { useRef, useState } from "react";
 import "./register.css";
 
+axios.defaults.baseURL = 'https://tr-7t17.onrender.com/api';
+
 export default function Register({ setShowRegister }) {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
