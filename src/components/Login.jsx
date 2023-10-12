@@ -3,6 +3,8 @@ import axios from "axios";
 import { useRef, useState } from "react";
 import "./login.css";
 
+axios.defaults.baseURL = 'https://travel-backend-api.onrender.com/api/';
+
 export default function Login({ setShowLogin, setCurrentUsername,myStorage }) {
   const [error, setError] = useState(false);
   const usernameRef = useRef();
